@@ -11,6 +11,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Imports:
-	magrittr (>= 2.0.3)
+	magrittr (>= 2.0.3),
+	usethis (>= 2.1.6)
 	
 LazyData: true	
