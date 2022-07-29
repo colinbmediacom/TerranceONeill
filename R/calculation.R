@@ -53,8 +53,10 @@ eb_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
   
   return(eb_ds)}
 
+#' @return loadcensus
+#' @export 
 load_census <- function(){
-  load(file="~/TerranceONeill/data/Dataset_3004_2011_1_.rda")
+  load(file="~/TerranceONeill/R/sysdata.rda")
   return(Dataset_3004_2011_1_)
 }
 
