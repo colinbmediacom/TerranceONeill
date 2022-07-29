@@ -13,4 +13,4 @@ RoxygenNote: 7.2.1
 Imports:
 	magrittr (>= 2.0.3)
 	
-	
+LazyData: true	
