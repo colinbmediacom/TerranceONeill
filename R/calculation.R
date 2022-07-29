@@ -6,7 +6,7 @@
 
 eb_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
   
-  library(dplyr)
+  usethis::use_data(Dataset_3004_2011_1_, sysdata, internal = TRUE)
   load_census()
   
   eb_ds <- Dataset_3004_2011_1_ %>% 
