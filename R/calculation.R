@@ -6,7 +6,7 @@
 
 eb_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
   
-  
+  library(dplyr)
   load("~/TerranceONeill/data/Dataset_3004_2011_1_.rda")
   
   eb_ds <- Dataset_3004_2011_1_ %>% 
@@ -62,7 +62,7 @@ load_census <- function(){
 #' @return predictor output for UUP
 #' @export titanic_number
 titanic_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
-  
+  library(dplyr)
   
   eb_ds <- load_census()
   
@@ -117,7 +117,7 @@ titanic_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
 #' @export sb_number
 sb_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
   
-  
+  library(dplyr)
   load("~/TerranceONeill/data/Dataset_3004_2011_1_.rda")
   
   sb_ds <- Dataset_3004_2011_1_ %>% 
