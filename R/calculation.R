@@ -7,7 +7,7 @@
 eb_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
   
   library(dplyr)
-  load("~/TerranceONeill/data/Dataset_3004_2011_1_.rda")
+  load_census()
   
   eb_ds <- Dataset_3004_2011_1_ %>% 
     filter(Dataset_3004_2011_1_$Ward %in% c('Ballyhackamore', 'Ballymacarrett', 'Belmont', 'Bloomfield (Belfast LGD)', 'Cherryvalley', 'Island', 'Knock', 'Orangefield', 'Stormont', 'Sydenham','The Mount', 'Ballyhanwood', 'Carrowreagh', 'Cregagh', 'Downshire', 'Dundonald', 'Enler', "Gilnahirk", "Graham's Bridge", 'Lisnasharragh', 'Lower Braniel', 'Tullycarnet','Upper Braniel'))
@@ -118,7 +118,7 @@ titanic_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
 sb_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
   
   library(dplyr)
-  load("~/TerranceONeill/data/Dataset_3004_2011_1_.rda")
+  load_census()
   
   sb_ds <- Dataset_3004_2011_1_ %>% 
     filter(Dataset_3004_2011_1_$Ward %in% c('Beechill', 'Botanic','Belvoir', 'Blackstaff', 'Cairnshill', 'Carryduff East', 'Carryduff West', 'Wynchurch','Cregagh', 'Falls', 'Finaghy', 'Galwally', 'Hillfoot', 'Knockbracken','Malone','Minnowburn','Musgrave','Newtownbreda', 'Shaftesbury', 'Ravenhill', 'Rosetta','Stranmillis','Upper Malone', 'Windsor','Woodstock'))
@@ -168,7 +168,7 @@ sb_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
 str_number <- function(LTABC, LTCTWO, abcweight,ctwodeweight){
   
   
-  load("~/TerranceONeill/data/Dataset_3004_2011_1_.rda")
+  load_census()
   
   
   str_ds <- Dataset_3004_2011_1_ %>% 
